@@ -1,14 +1,22 @@
 //Finish the code below to make the counter increment everytime you press the button
 //Also, write the listener for the decrement button so that the counter decrements when you click it
-var incrementButton = document.getElementById('increment');
-var decrementButton = document.getElementById('decrement');
-var counter = document.getElementById('counter');
 
-var count = 0; // This variable holds the current value of the counter!
+let incrementButton = document.getElementById('increment');
+let decrementButton = document.getElementById('decrement');
+let counter = document.getElementById('counter');
 
-incrementButton.addEventListener('click', function(){
+// Initialize count
 
-    counter.innerHTML = count;
-    
-});
+let count = 0;
 
+// on click, increment count
+
+incrementButton.addEventListener('click', function () {
+  counter.innerHTML = ++count
+})
+
+// on click, decrement count
+
+decrementButton.addEventListener('click', function () {
+  counter.innerHTML = --count
+})

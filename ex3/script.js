@@ -2,6 +2,17 @@
 
 var button = document.getElementById("myButton");
 
+// TWO LINES
+
 button.addEventListener('click', function(){
-    
+    var boxEl = document.getElementById("box")
+    boxEl.style.backgroundColor = "blue"
 })
+
+
+
+// ONE LINE
+
+// button.addEventListener('click', function(){
+//     document.getElementById("box").style.backgroundColor="blue";
+// })
